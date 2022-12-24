@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/sub_section_card"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="10dp"
+  app:cardBackgroundColor="@android:color/holo_orange_light"
+  app:cardCornerRadius="10dp"
+  app:cardElevation="2dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+      android:id="@+id/edit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@android:color/holo_orange_light"
+      android:contentDescription="@string/edit"
+      android:src="@drawable/ic_edit"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/delete"
+      app:tint="@color/black" />
+
+    <ImageButton
+      android:id="@+id/delete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:backgroundTint="@android:color/holo_orange_light"
+      android:contentDescription="@string/delete"
+      android:src="@drawable/ic_delete"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/item_link_1"
+      app:tint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/item_title_1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="15dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:text="@string/item_title"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/item_link_1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:autoLink="web"
+      android:clickable="true"
+      android:focusable="true"
+      android:text="kjdsfjdkfjhdshkfhkjdhfkhdskjfhkjdsahfkjfhdkjhfksjhfkjagerheggsdkjfh"
+      android:textIsSelectable="true"
+      android:textSize="14sp"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintEnd_toEndOf="@id/item_title_1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/item_title_1" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

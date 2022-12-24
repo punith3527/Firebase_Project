@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="273dp"
+    android:background="@drawable/orange_bg">
+
+    <ImageView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="93dp"
+      android:contentDescription="@string/logo"
+      android:src="@drawable/gprec_logo" />
+
+  </FrameLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/email"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="20dp"
+    android:autofillHints="Title"
+    app:startIconDrawable="@drawable/ic_baseline_email_24"
+    android:fontFamily="@font/poppins_regular"
+    android:hint="@string/email"
+    android:inputType="text">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/username_input"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/dark"
+      android:fontFamily="@font/poppins_regular" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/password"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:autofillHints="Title"
+    app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+    app:endIconMode="password_toggle"
+    android:fontFamily="@font/poppins_regular"
+    android:hint="@string/password"
+    android:inputType="text">
+
+  <com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/pass"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/dark"
+    android:inputType="textPassword"
+    android:fontFamily="@font/poppins_regular" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/loginBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="62dp"
+    android:layout_marginRight="62dp"
+    android:layout_marginTop="18.7dp"
+    android:background="@drawable/orange_fill_rounded_color"
+    android:fontFamily="@font/poppins_medium"
+    android:gravity="center"
+    android:paddingBottom="14dp"
+    android:paddingTop="14dp"
+    android:text="@string/login"
+    android:textColor="@color/light"
+    android:textSize="12sp" />
+
+  <TextView
+    android:id="@+id/forgot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="12dp"
+    android:fontFamily="@font/poppins_medium"
+    android:text="@string/forgot_password"
+    android:textColor="@color/gprec"
+    android:textSize="11sp"
+    android:clickable="true"
+    android:focusable="true" />
+
+</LinearLayout>
